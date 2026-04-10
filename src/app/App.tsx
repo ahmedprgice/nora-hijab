@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion, useScroll, useTransform, useInView } from 'motion/react';
 import { ShoppingBag, Menu, X, Heart, Plus, Minus, Trash2, Star, Check, Truck, Shield, Package } from 'lucide-react';
-
+import heroImage from "./beautiful-woman-wearing-hijab (1).jpg";
 interface CartItem {
   id: number;
   name: string;
@@ -236,10 +236,26 @@ function HomePage({ addToCart, cart, setCurrentPage }: any) {
           </div>
 
           <img
-            src="https://images.unsplash.com/photo-1774486033344-e65e11a4fa29?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwzfHxoaWphYiUyMGZhc2hpb24lMjBlbGVnYW50JTIwd29tYW58ZW58MXx8fHwxNzc1Nzc1NzE2fDA&ixlib=rb-4.1.0&q=80&w=1080"
+
+
+
+
+             src={heroImage}
             alt="أزياء حجاب أنيقة"
             className="w-full h-[120%] object-cover object-center"
           />
+
+
+
+
+
+
+
+
+
+
+
+
         </motion.div>
 
         <motion.div
@@ -723,7 +739,7 @@ function StorytellingSection() {
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12 relative z-[1]">
         <div className="grid items-center gap-10 sm:gap-14 lg:grid-cols-2 lg:gap-20">
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
+            initial={{ opacity: 0, x: 50 }}g
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8 }}
             className="relative"
