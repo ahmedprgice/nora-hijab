@@ -240,17 +240,10 @@ function HomePage({ addToCart, cart, setCurrentPage }: any) {
 
 
 
-             src={heroImage}
+            src={heroImage}
             alt="أزياء حجاب أنيقة"
             className="w-full h-[120%] object-cover object-center"
           />
-
-
-
-
-
-
-
 
 
 
@@ -268,7 +261,7 @@ function HomePage({ addToCart, cart, setCurrentPage }: any) {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
-                className="mb-3 sm:mb-4"
+                className="mb-6 sm:mb-8"
               >
                 <span className="inline-block bg-white/90 px-3 py-2 text-xs tracking-[0.2em] text-[#1A1A1A] sm:px-4 sm:text-sm sm:tracking-widest" style={{ fontFamily: 'Tajawal, sans-serif' }}>
                   المجموعة الربيعية ٢٠٢٦
@@ -278,8 +271,7 @@ function HomePage({ addToCart, cart, setCurrentPage }: any) {
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.2 }}
-                className="mb-5 text-5xl leading-[0.95] text-white sm:mb-6 sm:text-6xl md:mb-8 md:text-8xl lg:text-9xl"
-                style={{ fontFamily: 'Amiri, serif', fontWeight: 700, textShadow: '0 2px 20px rgba(0,0,0,0.3)' }}
+                className="mb-5 text-5xl leading-[1.1] text-white sm:mb-6 sm:text-6xl md:mb-8 md:text-7xl lg:text-8xl" style={{ fontFamily: 'Amiri, serif', fontWeight: 700, textShadow: '0 2px 20px rgba(0,0,0,0.3)' }}
               >
                 أناقة
                 <br />
@@ -674,8 +666,8 @@ function StorytellingSection() {
         <svg width="100%" height="100%">
           <defs>
             <pattern id="arabesque" x="0" y="0" width="120" height="120" patternUnits="userSpaceOnUse">
-              <circle cx="60" cy="60" r="40" fill="none" stroke="#6B7D5C" strokeWidth="0.5"/>
-              <path d="M60 20 Q 80 40, 60 60 Q 40 40, 60 20 M60 60 Q 80 80, 60 100 Q 40 80, 60 60" fill="none" stroke="#6B7D5C" strokeWidth="0.5"/>
+              <circle cx="60" cy="60" r="40" fill="none" stroke="#6B7D5C" strokeWidth="0.5" />
+              <path d="M60 20 Q 80 40, 60 60 Q 40 40, 60 20 M60 60 Q 80 80, 60 100 Q 40 80, 60 60" fill="none" stroke="#6B7D5C" strokeWidth="0.5" />
             </pattern>
           </defs>
           <rect width="100%" height="100%" fill="url(#arabesque)" />
@@ -690,11 +682,11 @@ function StorytellingSection() {
 
       {/* Floral Corner Decoration */}
       <svg className="absolute bottom-32 right-16 w-56 h-56 opacity-[0.025]" viewBox="0 0 200 200" fill="none">
-        <circle cx="100" cy="100" r="15" fill="#6B7D5C"/>
-        <circle cx="100" cy="70" r="12" fill="#6B7D5C"/>
-        <circle cx="130" cy="100" r="12" fill="#6B7D5C"/>
-        <circle cx="100" cy="130" r="12" fill="#6B7D5C"/>
-        <circle cx="70" cy="100" r="12" fill="#6B7D5C"/>
+        <circle cx="100" cy="100" r="15" fill="#6B7D5C" />
+        <circle cx="100" cy="70" r="12" fill="#6B7D5C" />
+        <circle cx="130" cy="100" r="12" fill="#6B7D5C" />
+        <circle cx="100" cy="130" r="12" fill="#6B7D5C" />
+        <circle cx="70" cy="100" r="12" fill="#6B7D5C" />
       </svg>
 
       {/* Decorative Tree Branch - Left Bottom */}
@@ -739,7 +731,7 @@ function StorytellingSection() {
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12 relative z-[1]">
         <div className="grid items-center gap-10 sm:gap-14 lg:grid-cols-2 lg:gap-20">
           <motion.div
-            initial={{ opacity: 0, x: 50 }}g
+            initial={{ opacity: 0, x: 50 }} g
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8 }}
             className="relative"
@@ -1613,7 +1605,7 @@ function InstagramGrid() {
         <svg width="100%" height="100%">
           <defs>
             <pattern id="honeycomb" x="0" y="0" width="60" height="52" patternUnits="userSpaceOnUse">
-              <path d="M30 0 L45 13 L45 39 L30 52 L15 39 L15 13 Z" fill="none" stroke="#6B7D5C" strokeWidth="1"/>
+              <path d="M30 0 L45 13 L45 39 L30 52 L15 39 L15 13 Z" fill="none" stroke="#6B7D5C" strokeWidth="1" />
             </pattern>
           </defs>
           <rect width="100%" height="100%" fill="url(#honeycomb)" />
@@ -1629,9 +1621,9 @@ function InstagramGrid() {
 
       {/* Camera Icon Decoration */}
       <svg className="absolute top-24 left-16 w-32 h-32 opacity-[0.03]" viewBox="0 0 100 100" fill="none">
-        <rect x="20" y="30" width="60" height="45" rx="5" stroke="#6B7D5C" strokeWidth="2" fill="none"/>
-        <circle cx="50" cy="52" r="12" stroke="#6B7D5C" strokeWidth="2" fill="none"/>
-        <rect x="40" y="20" width="20" height="10" rx="2" fill="#6B7D5C"/>
+        <rect x="20" y="30" width="60" height="45" rx="5" stroke="#6B7D5C" strokeWidth="2" fill="none" />
+        <circle cx="50" cy="52" r="12" stroke="#6B7D5C" strokeWidth="2" fill="none" />
+        <rect x="40" y="20" width="20" height="10" rx="2" fill="#6B7D5C" />
       </svg>
 
       {/* Willow Branches - Right Side */}
@@ -1756,8 +1748,8 @@ function Newsletter() {
           ease: "easeInOut"
         }}
       >
-        <rect x="15" y="30" width="70" height="50" rx="3" stroke="white" strokeWidth="2" fill="none"/>
-        <path d="M15 30 L50 60 L85 30" stroke="white" strokeWidth="2" fill="none"/>
+        <rect x="15" y="30" width="70" height="50" rx="3" stroke="white" strokeWidth="2" fill="none" />
+        <path d="M15 30 L50 60 L85 30" stroke="white" strokeWidth="2" fill="none" />
       </motion.svg>
 
       <motion.svg
@@ -1774,8 +1766,8 @@ function Newsletter() {
           ease: "easeInOut"
         }}
       >
-        <rect x="15" y="30" width="70" height="50" rx="3" stroke="white" strokeWidth="2" fill="none"/>
-        <path d="M15 30 L50 60 L85 30" stroke="white" strokeWidth="2" fill="none"/>
+        <rect x="15" y="30" width="70" height="50" rx="3" stroke="white" strokeWidth="2" fill="none" />
+        <path d="M15 30 L50 60 L85 30" stroke="white" strokeWidth="2" fill="none" />
       </motion.svg>
 
       <div className="max-w-[800px] mx-auto px-6 text-center relative z-[1]">
@@ -2052,8 +2044,8 @@ function CartPage({ cart, updateQuantity, removeFromCart, setCurrentPage }: any)
             ease: "easeInOut"
           }}
         >
-          <path d="M25 35 L75 35 L70 85 L30 85 Z" stroke="#6B7D5C" strokeWidth="2" fill="none"/>
-          <path d="M35 35 L35 25 Q35 15, 50 15 Q65 15, 65 25 L65 35" stroke="#6B7D5C" strokeWidth="2" fill="none"/>
+          <path d="M25 35 L75 35 L70 85 L30 85 Z" stroke="#6B7D5C" strokeWidth="2" fill="none" />
+          <path d="M35 35 L35 25 Q35 15, 50 15 Q65 15, 65 25 L65 35" stroke="#6B7D5C" strokeWidth="2" fill="none" />
         </motion.svg>
 
         {/* Decorative Plus Grid - Animated */}
