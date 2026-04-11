@@ -206,3 +206,8 @@
     line-height: 1.5;
   }
 }
+
+body::before,
+body::after {
+  z-index: -1;
+}
